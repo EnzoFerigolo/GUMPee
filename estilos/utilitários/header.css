@@ -9,20 +9,19 @@
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .header ul {
-  display: grid;
-  grid-auto-flow: column;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   width: max-content;
 }
 
 .header li {
-  display: flex;
-  flex-wrap: wrap;
   padding: 12px;
 }
 
@@ -31,11 +30,13 @@
   gap: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .header {
-    gap: 8px;
+    gap: 0;
   }
   .header-botoes {
+    padding: 8px 0;
     gap: 12px;
+    margin: 0 auto;
   }
 }
