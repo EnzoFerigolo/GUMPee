@@ -1,0 +1,12 @@
+/* Global */
+@import '/estilos/utilitários/global.css';
+
+/* Utilitários */
+@import '/estilos/utilitários/tipografia.css';
+@import '/estilos/utilitários/cores.css';
+
+/* Header */
+@import '/estilos/utilitários/header.css';
+
+/* Home */
+@import '/estilos/páginas/home.css';

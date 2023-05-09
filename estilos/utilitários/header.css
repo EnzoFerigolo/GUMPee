@@ -1,0 +1,41 @@
+.header-bg {
+  background-color: #fff;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 12px auto;
+  padding: 0 40px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  width: max-content;
+}
+
+.header li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px;
+}
+
+.header-botoes {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    gap: 8px;
+  }
+  .header-botoes {
+    gap: 12px;
+  }
+}
