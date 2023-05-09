@@ -13,17 +13,34 @@
   align-items: center;
 }
 
+.header li a {
+  padding: 12px 0;
+  position: relative;
+}
+
+.header li a::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  background-color: var(--cor-a3);
+  transition: 0.3s;
+  width: 0;
+  position: absolute;
+}
+
+.header li a:hover::after {
+  display: block;
+  width: 100%;
+}
+
 .header ul {
   width: fit-content;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 32px;
   width: max-content;
 }
 
-.header li {
-  padding: 12px;
-}
 
 .header-botoes {
   display: flex;
