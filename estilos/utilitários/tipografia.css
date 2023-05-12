@@ -76,8 +76,8 @@
   font-family: "Source Sans Pro";
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 1.4;
-  letter-spacing: 0.005em;
+  line-height: 1.5;
+  letter-spacing: 0.0075em;
 }
 
 .font-3-small {
@@ -136,4 +136,3 @@
     font-size: 0.85rem;
   }
 }
-

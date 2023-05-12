@@ -1,13 +1,14 @@
 :root {
   --cor-principal: #f5c31d;
   --cor-p-1: #fbd335;
+  --cor-p-2: #4e3703;
   --cor-a-3: #e3f2f7;
   --cor-a-2: #b3e0f4;
   --cor-a-1: #98d6e6;
   --cor-azul: #00afef;
   --cor-a2: #0086c9;
-  --cor-a3: #003761;
-  --cor-a4: #002241;
+  --cor-a3: #004d88;
+  --cor-a4: #001e3a;
 }
 
 .cor-principal {

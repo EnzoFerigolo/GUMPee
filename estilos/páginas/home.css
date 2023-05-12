@@ -65,3 +65,45 @@
   width: 100%;
   height: auto;
 }
+
+.texto-cf {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.texto-cf h1 {
+  margin-bottom: 40px;
+}
+
+.texto-cf p {
+  margin-bottom: 28px;
+  max-width: 40ch;
+}
+
+.texto-cf li {
+  position: relative;
+  margin-top: 24px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.texto-cf li::before {
+  content: "";
+  background-image: url('/imgs/icone-x.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: -48px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.video {
+  height: min-content;
+  margin: auto 0;
+}
+
+.video iframe {
+  width: 100%;
+}
