@@ -34,26 +34,14 @@
 }
 
 .header ul {
-  width: fit-content;
+  max-width: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
   width: max-content;
 }
 
-
 .header-botoes {
   display: flex;
-  gap: 20px;
-}
-
-@media (max-width: 800px) {
-  .header {
-    gap: 0;
-  }
-  .header-botoes {
-    padding: 8px 0;
-    gap: 12px;
-    margin: 0 auto;
-  }
+  gap: 12px;
 }

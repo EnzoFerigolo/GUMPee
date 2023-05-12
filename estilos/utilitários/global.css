@@ -32,7 +32,7 @@ span {
   max-width: 1200px;
   padding: 0 64px;
   margin: 0 auto;
-  gap: 40px;
+  gap: 80px;
 }
 
 .btn1,
@@ -56,11 +56,14 @@ span {
   color: var(--cor-a-3);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .btn1,
   .btn2 {
     padding: 8px 12px;
     border-radius: 5px;
+  }
+  .container {
+    grid-template-columns: 1fr;
   }
 }
 

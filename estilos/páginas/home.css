@@ -16,7 +16,6 @@
   padding: 80px 0;
 }
 
-.texto-intro h1,
 .texto-intro p {
   margin-bottom: 24px;
 }
@@ -32,33 +31,26 @@
   top: -240px;
 }
 
-.ca {
+section h1 {
+  margin-bottom: 40px;
+}
+
+.ca,
+.cf {
   text-align: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
-.ca:first-of-type:after {
-  content: "";
+.decorador-balao {
   display: grid;
-  grid-column: 1/-1;
-  margin: 0 auto;
-  background-image: url("/imgs/decorador-balao.png");
-  background-repeat: no-repeat;
-  height: 160px;
-  width: 110px;
+  place-content: center;
+  margin-bottom: 40px;
 }
 
-.ca h1 {
-  margin-bottom: 32px;
-}
-
-.ca:first-of-type p {
+.ca p {
   max-width: 38ch;
   margin: 0 auto;
-}
-
-.text-ca {
-  width: max-content;
 }
 
 .img-ca img {
@@ -69,10 +61,7 @@
 .texto-cf {
   text-align: left;
   margin-bottom: 40px;
-}
-
-.texto-cf h1 {
-  margin-bottom: 40px;
+  z-index: 2;
 }
 
 .texto-cf p {
@@ -89,7 +78,7 @@
 
 .texto-cf li::before {
   content: "";
-  background-image: url('/imgs/icone-x.svg');
+  background-image: url("/imgs/icone-x.svg");
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
@@ -99,11 +88,71 @@
   height: 24px;
 }
 
+.na-bg {
+  background: url("/imgs/decoradorbg-vermelho.png") no-repeat;
+}
+
 .video {
   height: min-content;
   margin: auto 0;
+  position: relative;
+}
+
+.video::after {
+  content: "";
+  background-image: url("/imgs/decorador-balao.png");
+  display: block;
+  height: 120px;
+  width: 84px;
+  rotate: -30deg;
+  position: absolute;
+  bottom: -40px;
+  left: -24px;
+}
+
+.video::before {
+  content: " ";
+  display: grid;
+  background-image: url("/imgs/decorador-peça.png");
+  height: 165px;
+  width: 110px;
+  position: absolute;
+  rotate: -50deg;
+  left: 85%;
+  top: -80px;
 }
 
 .video iframe {
   width: 100%;
+}
+
+.btn1.container {
+  position: relative;
+}
+
+.texto-cf .btn1::after {
+  content: "";
+  position: absolute;
+  background-image: url("/imgs/decorador-cobra-amarelo.png");
+  background-repeat: no-repeat;
+  height: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .cf,
+  .na {
+    grid-template-columns: 1fr;
+  }
+  .texto-cf {
+    max-width: 42ch;
+    place-self: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .video::before {
+    display: none;
+  }
 }
