@@ -39,13 +39,11 @@ section h1 {
 .cf {
   text-align: center;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 .decorador-balao {
   display: grid;
   place-content: center;
-  margin-bottom: 80px;
 }
 
 .ca p {
@@ -55,12 +53,12 @@ section h1 {
 
 .img-ca img {
   width: 100%;
-  height: auto;
 }
 
 .texto-cf {
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   z-index: 2;
 }
 
@@ -69,7 +67,7 @@ section h1 {
 }
 
 .texto-cf p {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
   max-width: 40ch;
 }
 
@@ -175,6 +173,7 @@ section h1 {
   max-width: 100ch;
   text-align: center;
   margin: 0 auto;
+  margin-top: 80px;
 }
 
 .sintomas-lista {
