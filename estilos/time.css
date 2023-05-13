@@ -1,0 +1,56 @@
+.diretores-bg {
+  background-color: var(--cor-a-2);
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-shadow: inset 0px -120px var(--cor-a-2);
+}
+
+.diretores-bg h1 {
+  display: inline-block;
+  max-width: 16ch;
+}
+
+.diretor p {
+  max-width: 38ch;
+  margin: 0 auto;
+}
+
+.diretor img {
+  display: grid;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 20px;
+  max-width: 100%;
+  height: 480px;
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 140px;
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.125))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.diretor:first-of-type::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  background: url("/imgs/ícones/coroa-rei.png") no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.diretor:nth-child(2):before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  background: url("/imgs/ícones/coroa-rainha.png") no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.diretor span {
+  display: block;
+  color: #a4d22a;
+  margin-bottom: 20px;
+}
