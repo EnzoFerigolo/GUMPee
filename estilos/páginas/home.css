@@ -45,7 +45,7 @@ section h1 {
 .decorador-balao {
   display: grid;
   place-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .ca p {
@@ -64,8 +64,12 @@ section h1 {
   z-index: 2;
 }
 
+.texto-cf h1 {
+  margin-bottom: 40px;
+}
+
 .texto-cf p {
-  margin-bottom: 28px;
+  margin-bottom: 64px;
   max-width: 40ch;
 }
 
@@ -139,6 +143,67 @@ section h1 {
   overflow: hidden;
 }
 
+.parceiros {
+  margin-bottom: 40px;
+}
+
+.parceiros h1 {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 0;
+}
+
+.parceiros-conteudo {
+  padding: 60px;
+  overflow: scroll;
+}
+
+.parceiros-conteudo ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  height: fit-content;
+}
+
+.parceiros-conteudo img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.sintomas-texto {
+  max-width: 100ch;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sintomas-lista {
+  margin-top: 80px;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  place-content: center;
+  place-self: center;
+}
+
+.sintomas-lista li::before {
+  content: "";
+  display: block;
+  background-image: url("/imgs/decorador-lista-sintomas.png");
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+.sintomas-lista li::after {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  margin-top: 8px;
+  background-color: #dede;
+}
+
 @media (max-width: 800px) {
   .cf,
   .na {
@@ -148,6 +213,9 @@ section h1 {
     max-width: 42ch;
     place-self: center;
     margin: 0;
+  }
+  .decorador-balao {
+    margin-bottom: 64px;
   }
 }
 
