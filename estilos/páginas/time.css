@@ -1,15 +1,26 @@
 .diretores-bg {
   background-color: var(--cor-a-2);
   text-align: center;
-  margin-top: 80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  box-shadow: inset 0px -120px var(--cor-a-2);
+  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
 }
 
 .diretores-bg h1 {
   display: inline-block;
   max-width: 16ch;
+}
+
+.diretores-bg::before {
+  content: "";
+  display: block;
+  background-image: url("/imgs/decorador-peça.png");
+  height: 172px;
+  width: 120px;
+  position: absolute;
+  right: 80px;
+  top: -90px;
 }
 
 .diretor p {

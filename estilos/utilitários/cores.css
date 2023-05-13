@@ -8,7 +8,7 @@
   --cor-azul: #00afef;
   --cor-a2: #0086C9;
   --cor-a3: #003c69;
-  --cor-a4: #001e3a;
+  --cor-a4: #00182f;
 }
 
 .cor-principal {
@@ -20,7 +20,7 @@
 }
 
 .cor-a-3 {
-  color: var(--cor-3);
+  color: var(--cor-a-3);
 }
 
 .cor-a-2 {

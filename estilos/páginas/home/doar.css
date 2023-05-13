@@ -1,0 +1,37 @@
+.doar {
+  background: linear-gradient(
+    to bottom,
+    var(--cor-a-2) 30%,
+    var(--cor-a-3) 30%
+  );
+}
+
+.doar img {
+  border: 10px solid #ffffff;
+  height: auto;
+  max-width: 100%;
+}
+
+.doar .container {
+  position: relative;
+}
+
+.doar-texto {
+  position: absolute;
+  padding: 40px;
+  text-align: center;
+  max-width: 280px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 15%;
+  top: 15%;
+}
+
+.doar-texto p {
+  margin-bottom: 24px;
+}
+
+.doar-texto h2:first-of-type {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}

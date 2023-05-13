@@ -9,7 +9,8 @@
 @import '/estilos/utilitários/header.css';
 
 /* Home */
-@import '/estilos/páginas/home.css';
+@import '/estilos/páginas/home/home.css';
+@import '/estilos/páginas/home/doar.css';
 
 /* Time */
-@import "/estilos/time.css";
+@import "/estilos/páginas/time.css";
