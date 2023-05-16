@@ -32,15 +32,8 @@
 .font-1-xs {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.185;
-}
-
-.font-1-xxs {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.35;
+  font-size: 0.85rem;
+  line-height: 1.2;
 }
 
 .font-2-l {
@@ -87,7 +80,7 @@
   line-height: 1.5;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .font-1-xl {
     font-size: 3rem;
   }
@@ -97,7 +90,7 @@
   }
 
   .font-1-m {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .font-1-s {
@@ -108,24 +101,12 @@
     font-size: 0.75rem;
   }
 
-  .font-1-xxs {
-    font-size: 0.625rem;
-  }
-
-  .font-2-l {
-    font-size: 1rem;
-  }
-
-  .font-2-m {
-    font-size: 0.85rem;
-  }
-
   .font-3-bold {
     font-size: 1.25rem;
   }
 
   .font-3-regular {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .font-3-light {

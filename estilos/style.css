@@ -8,6 +8,9 @@
 /* Header */
 @import '/estilos/utilitários/header.css';
 
+/* Footer */
+@import '/estilos/utilitários/footer.css';
+
 /* Home */
 @import '/estilos/páginas/home/home.css';
 @import '/estilos/páginas/home/doar.css';

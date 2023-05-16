@@ -65,7 +65,7 @@ span {
   grid-column: 1/-1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .btn1,
   .btn2 {
     padding: 8px 12px;
@@ -76,11 +76,5 @@ span {
   }
   .col-2 {
     grid-column: 1;
-  }
-}
-
-@media (max-width: 650px) {
-  .container {
-    grid-template-columns: 1fr;
   }
 }
