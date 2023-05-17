@@ -1,0 +1,54 @@
+.objetivos {
+  margin-top: 40px;
+  place-content: center;
+}
+
+.objetivos h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.objetivos-paragrafo {
+  text-align: right;
+}
+
+.video {
+  gap: 0;
+  margin: auto 0;
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.video iframe {
+  height: 100%;
+  width: 100%;
+  border: solid 12px #fff;
+  border-radius: 5px;
+}
+
+.video::after {
+  content: "";
+  background-image: url("/imgs/decorador-balao.png");
+  display: inline-block;
+  height: 120px;
+  width: 84px;
+  rotate: -30deg;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+
+.video::before {
+  content: "";
+  display: block;
+  background: url("/imgs/decorador-peça.png") no-repeat;
+  background-size: contain;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  rotate: -50deg;
+  right: 0;
+  top: -80px;
+  z-index: 1;
+}

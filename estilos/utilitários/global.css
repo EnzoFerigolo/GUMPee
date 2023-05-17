@@ -61,7 +61,6 @@ span {
 }
 
 .col-2 {
-  display: grid;
   grid-column: 1/-1;
 }
 

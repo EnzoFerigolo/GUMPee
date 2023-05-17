@@ -82,14 +82,13 @@ section h1 {
   max-width: 40ch;
 }
 
-.texto-cf li {
+.lista li {
   position: relative;
-  margin-top: 24px;
   cursor: pointer;
   margin-bottom: 8px;
 }
 
-.texto-cf li::before {
+.lista li::before {
   content: "";
   background-image: url("/imgs/icone-x.svg");
   background-repeat: no-repeat;
@@ -110,40 +109,6 @@ section h1 {
   padding-top: 80px;
 }
 
-.video {
-  height: min-content;
-  margin: auto 0;
-  position: relative;
-}
-
-.video::after {
-  content: "";
-  background-image: url("/imgs/decorador-balao.png");
-  display: block;
-  height: 120px;
-  width: 84px;
-  rotate: -30deg;
-  position: absolute;
-  bottom: -40px;
-  left: -24px;
-}
-
-.video::before {
-  content: " ";
-  display: grid;
-  background-image: url("/imgs/decorador-peça.png");
-  height: 165px;
-  width: 110px;
-  position: absolute;
-  rotate: -50deg;
-  left: 80%;
-  top: -80px;
-}
-
-.video iframe {
-  width: 100%;
-}
-
 .btn1.container {
   position: relative;
 }
@@ -151,8 +116,7 @@ section h1 {
 .texto-cf .btn1::after {
   content: "";
   position: absolute;
-  background-image: url("/imgs/decorador-cobra-amarelo.png");
-  background-repeat: no-repeat;
+  background: url("/imgs/decorador-cobra-amarelo.png") no-repeat;
   height: 20px;
   overflow: hidden;
 }
@@ -241,9 +205,6 @@ section h1 {
 
 @media (max-width: 600px) {
   .intro-bg::after {
-    display: none;
-  }
-  .video::before {
     display: none;
   }
 }

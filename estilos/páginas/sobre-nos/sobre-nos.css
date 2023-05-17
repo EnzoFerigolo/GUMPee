@@ -15,8 +15,16 @@
   position: absolute;
 }
 
+#sobre-nos {
+  background-color: var(--cor-a-3);
+}
+
 #sobre-nos .intro-texto {
   grid-template-columns: 5fr 7fr;
+}
+
+.trajetoria-img {
+  z-index: 0;
 }
 
 .trajetoria-img img {
@@ -31,10 +39,30 @@
 
 .trajetoria-txt {
   padding-top: 120px;
+  height: fit-content;
+  z-index: 0;
 }
 
 .trajetoria-bg {
   position: relative;
+  background-color: #fff;
+}
+
+.wave2 {
+  position: relative;
+}
+
+.wave2::after {
+  content: "";
+  display: block;
+  background: url("/imgs/decorador-peça.png") no-repeat;
+  background-size: 50%;
+  height: 200px;
+  width: 180px;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  rotate: -45deg;
 }
 
 .wave {
@@ -55,10 +83,11 @@
 
 .wave2 .shape-fill,
 .wave .shape-fill {
-  fill: #E3F2F7;
+  fill: #e3f2f7;
 }
 
 .wave2 {
+  padding-top: 80px;
   position: absolute;
   bottom: -40px;
   left: 0;
@@ -77,5 +106,8 @@
   .trajetoria-txt {
     padding-top: 0;
     padding-bottom: 120px;
+  }
+  .wave2::after {
+    bottom: -15%;
   }
 }
