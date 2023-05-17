@@ -15,5 +15,9 @@
 @import '/estilos/páginas/home/home.css';
 @import '/estilos/páginas/home/doar.css';
 
+
+/* Sobre nós */
+@import '/estilos/páginas/sobre-nos/sobre-nos.css';
+
 /* Time */
 @import "/estilos/páginas/time.css";

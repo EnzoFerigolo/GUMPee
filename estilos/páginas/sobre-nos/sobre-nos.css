@@ -1,0 +1,81 @@
+#sobre-nos .intro-bg {
+  box-shadow: none;
+  position: relative;
+  padding: 0;
+}
+
+#sobre-nos .intro-bg::after {
+  content: "";
+  background: url("/imgs/intro-sobre-nos-img.png") no-repeat left bottom;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  top: -40px;
+  left: 50%;
+  position: absolute;
+}
+
+#sobre-nos .intro-texto {
+  grid-template-columns: 5fr 7fr;
+}
+
+.trajetoria-img img {
+  object-fit: contain;
+  width: 100%;
+  filter: drop-shadow(15px 20px 20px rgba(0, 0, 0, 0.25));
+}
+
+.trajetoria {
+  padding: 0 60px;
+}
+
+.trajetoria-txt {
+  padding-top: 120px;
+}
+
+.trajetoria-bg {
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 280px;
+}
+
+.wave2 .shape-fill,
+.wave .shape-fill {
+  fill: #E3F2F7;
+}
+
+.wave2 {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(151% + 1.3px);
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .trajetoria-txt {
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
+}

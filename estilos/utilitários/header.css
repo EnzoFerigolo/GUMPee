@@ -4,8 +4,8 @@
 
 .header {
   max-width: 1200px;
-  margin: 12px auto;
-  padding: 0 40px;
+  margin: 0 auto;
+  padding: 12px 40px;
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
