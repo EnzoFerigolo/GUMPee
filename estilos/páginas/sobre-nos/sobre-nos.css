@@ -4,23 +4,40 @@
   padding: 0;
 }
 
-#sobre-nos .intro-bg::after {
+#sobre-nos .intro {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro-img {
+  z-index: 1;
+}
+
+#sobre-nos .intro-img img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+#sobre-nos .intro-bg::before {
   content: "";
-  background: url("/imgs/intro-sobre-nos-img.png") no-repeat left bottom;
+  background: url("/imgs/intro-sobre-nos-fundo.png") no-repeat left top;
   background-size: contain;
   height: 100%;
   width: 100%;
-  top: -40px;
-  left: 50%;
+  top: -10%;
+  left: 55%;
   position: absolute;
+  z-index: 0;
 }
 
 #sobre-nos {
   background-color: var(--cor-a-3);
 }
 
-#sobre-nos .intro-texto {
-  grid-template-columns: 5fr 7fr;
+#sobre-nos .texto-intro h1 {
+  max-width: 10ch;
 }
 
 .trajetoria-img {
@@ -103,9 +120,26 @@
 }
 
 @media (max-width: 800px) {
+  #sobre-nos .intro {
+    grid-template-columns: 1fr;
+  }
+  #sobre-nos .texto-intro {
+    place-self: start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #sobre-nos .texto-intro p {
+    max-width: max-content;
+  }
   .trajetoria-txt {
-    padding-top: 0;
-    padding-bottom: 120px;
+    grid-row: 1;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .trajetoria-img img {
+    object-fit: cover;
+    object-position: top;
+    height: 600px;
   }
   .wave2::after {
     bottom: -15%;

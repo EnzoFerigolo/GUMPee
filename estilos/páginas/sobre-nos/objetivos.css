@@ -52,3 +52,9 @@
   top: -80px;
   z-index: 1;
 }
+
+@media (max-width: 800px) {
+  .objetivos-paragrafo {
+    text-align: center;
+  }
+}
