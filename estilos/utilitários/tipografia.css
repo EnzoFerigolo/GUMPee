@@ -12,6 +12,7 @@
   font-weight: 800;
   font-size: 3rem;
   line-height: 1.15;
+  letter-spacing: 0.04em;
 }
 
 .font-1-m {
@@ -60,7 +61,7 @@
 .font-3-regular {
   font-family: "Source Sans Pro";
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -68,7 +69,7 @@
 .font-3-light {
   font-family: "Source Sans Pro";
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   letter-spacing: 0.0075em;
 }
@@ -106,11 +107,11 @@
   }
 
   .font-3-regular {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .font-3-light {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .font-3-small {
