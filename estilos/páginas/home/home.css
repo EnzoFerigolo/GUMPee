@@ -86,6 +86,7 @@ section h1 {
   position: relative;
   cursor: pointer;
   margin-bottom: 8px;
+  max-width: 32ch;
 }
 
 .lista li::before {
@@ -195,6 +196,9 @@ section h1 {
   }
   #home .texto-intro p {
     max-width: 30ch;
+  }
+  .lista {
+    place-self: center;
   }
   .lista li::before {
     background-size: 75%;
