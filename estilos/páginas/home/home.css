@@ -8,7 +8,6 @@
 
 #home .intro {
   grid-template-columns: 2fr 1fr;
-  max-width: 100%;
   height: 100%;
 }
 
