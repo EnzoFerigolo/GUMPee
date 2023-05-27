@@ -45,9 +45,10 @@
 }
 
 .trajetoria-img img {
-  object-fit: contain;
+  object-fit: cover;
+  object-position: left top;
+  height: 100%;
   width: 100%;
-  filter: drop-shadow(15px 20px 20px rgba(0, 0, 0, 0.25));
 }
 
 .trajetoria {
@@ -56,7 +57,6 @@
 
 .trajetoria-txt {
   padding-top: 120px;
-  height: fit-content;
   z-index: 0;
 }
 
@@ -65,8 +65,28 @@
   background-color: #fff;
 }
 
-.wave2 {
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wave svg {
   position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 280px;
+}
+
+.wave2 {
+  transform: rotate3d(0, 1, 0, 180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .wave2::after {
@@ -82,34 +102,9 @@
   rotate: -45deg;
 }
 
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(142% + 1.3px);
-  height: 280px;
-}
-
 .wave2 .shape-fill,
 .wave .shape-fill {
   fill: #e3f2f7;
-}
-
-.wave2 {
-  padding-top: 80px;
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
 }
 
 .wave2 svg {
@@ -142,6 +137,12 @@
     height: 600px;
   }
   .wave2::after {
-    bottom: -15%;
+    bottom: -50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .trajetoria-img img {
+    max-height: 400px;
   }
 }

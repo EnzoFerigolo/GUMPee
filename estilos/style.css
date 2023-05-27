@@ -1,26 +1,28 @@
 /* Global */
-@import '/estilos/utilitários/global.css';
+@import "/estilos/utilitarios/global.css";
 
 /* Utilitários */
-@import '/estilos/utilitários/tipografia.css';
-@import '/estilos/utilitários/cores.css';
+@import "/estilos/utilitarios/tipografia.css";
+@import "/estilos/utilitarios/cores.css";
 
 /* Header */
-@import '/estilos/utilitários/header.css';
+@import "/estilos/utilitarios/header.css";
 
 /* Footer */
-@import '/estilos/utilitários/footer.css';
+@import "/estilos/utilitarios/footer.css";
 
 /* Home */
-@import '/estilos/páginas/home/home.css';
-@import '/estilos/páginas/home/doar.css';
-
+@import "/estilos/paginas/home/home.css";
+@import "/estilos/paginas/home/doar.css";
 
 /* Sobre nós */
-@import '/estilos/páginas/sobre-nos/sobre-nos.css';
-@import '/estilos/páginas/sobre-nos/objetivos.css';
-@import '/estilos/páginas/sobre-nos/redes.css';
-@import '/estilos/páginas/sobre-nos/desenvolvedores.css';
+@import "/estilos/paginas/sobre-nos/sobre-nos.css";
+@import "/estilos/paginas/sobre-nos/objetivos.css";
+@import "/estilos/paginas/sobre-nos/redes.css";
+@import "/estilos/paginas/sobre-nos/desenvolvedores.css";
+
+/* Serviços */
+@import "/estilos/paginas/servicos/servicos.css";
 
 /* Time */
-@import "/estilos/páginas/home/time.css";
+@import "/estilos/paginas/home/time.css";

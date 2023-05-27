@@ -1,0 +1,13 @@
+#servicos .wave2 .shape-fill,
+#servicos .wave .shape-fill {
+  fill: #fff;
+}
+
+#servicos .wave {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.texto-servicos {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}

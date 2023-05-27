@@ -12,6 +12,9 @@
 
 .redes-img img {
   object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-height: 800px;
 }
 
 .redes-bg::after {
@@ -23,17 +26,14 @@
   max-width: 60%;
   height: 860px;
   position: absolute;
-  bottom: -20%;
+  bottom: -15%;
   left: -10%;
-}
-
-.redes-img img {
-  max-width: 100%;
 }
 
 .redes-texto {
   place-self: center;
   z-index: 1;
+  margin: 80px 0;
 }
 
 .redes-texto h1 {
@@ -55,6 +55,12 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 950px) {
+  .redes-bg {
+    box-shadow: inset 0px 60px var(--cor-a-3), inset 0px -60px var(--cor-a-3);
+  }
+}
+
 @media (max-width: 800px) {
   .redes-bg {
     box-shadow: none;
@@ -71,5 +77,12 @@
   }
   .redes-texto li {
     margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .redes-lista img {
+    height: auto;
+    width: 50%;
   }
 }

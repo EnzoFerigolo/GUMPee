@@ -15,12 +15,13 @@
 .diretores-bg::before {
   content: "";
   display: block;
-  background-image: url("/imgs/decorador-peça.png");
-  height: 172px;
+  background: url("/imgs/decorador-peça.png") no-repeat;
+  background-size: contain;
+  height: 120px;
   width: 120px;
   position: absolute;
   right: 80px;
-  top: -90px;
+  top: -64px;
 }
 
 .diretor p {
@@ -46,7 +47,7 @@
   content: "";
   display: block;
   margin: 0 auto;
-  background: url("/imgs/ícones/coroa-rei.png") no-repeat;
+  background: url("/imgs/icones/coroa-rei.png") no-repeat;
   width: 40px;
   height: 40px;
 }
@@ -55,7 +56,7 @@
   content: "";
   display: block;
   margin: 0 auto;
-  background: url("/imgs/ícones/coroa-rainha.png") no-repeat;
+  background: url("/imgs/icones/coroa-rainha.png") no-repeat;
   width: 40px;
   height: 40px;
 }
@@ -64,4 +65,16 @@
   display: block;
   color: #a4d22a;
   margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .diretores-bg
+  .diretores-bg {
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .diretor img {
+    padding: 20px;
+  }
 }

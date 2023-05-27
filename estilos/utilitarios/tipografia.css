@@ -18,7 +18,7 @@
 .font-1-m {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.5rem;
   line-height: 1.25;
 }
@@ -54,7 +54,7 @@
 .font-3-bold {
   font-family: "Source Sans Pro";
   font-weight: 600;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
@@ -87,7 +87,7 @@
   }
 
   .font-1-l {
-    font-size: 1.85rem;
+    font-size: 2.25rem;
   }
 
   .font-1-m {
@@ -115,6 +115,24 @@
   }
 
   .font-3-small {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .font-1-xl {
+    font-size: 2.25rem;
+  }
+
+  .font-1-l {
+    font-size: 1.75rem;
+  }
+
+  .font-1-m {
+    font-size: 1.5rem;
+  }
+
+  .font-1-s {
     font-size: 0.85rem;
   }
 }

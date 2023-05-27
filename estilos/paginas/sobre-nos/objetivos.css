@@ -21,13 +21,13 @@ body {
 .video {
   gap: 0;
   margin: auto 0;
-  width: 100%;
   aspect-ratio: 16/9;
   position: relative;
 }
 
 .video iframe {
   height: 100%;
+  box-sizing: border-box;
   width: 100%;
   border: solid 12px #fff;
   border-radius: 5px;
@@ -42,7 +42,7 @@ body {
   rotate: -30deg;
   position: absolute;
   bottom: -80px;
-  left: 0;
+  left: 5%;
 }
 
 .video::before {
@@ -54,11 +54,11 @@ body {
   width: 120px;
   position: absolute;
   rotate: -50deg;
-  right: 0;
+  right: 5%;
   top: -80px;
   z-index: 1;
 }
-
+/* 
 .objetivos::after {
   content: "";
   display: inline-block;
@@ -68,10 +68,18 @@ body {
   position: absolute;
   bottom: 0;
   left: 60%;
-}
+  overflow: hidden;
+} */
 
 @media (max-width: 800px) {
   .objetivos-paragrafo {
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .video::after,
+  .video::before {
+    display: none;
   }
 }

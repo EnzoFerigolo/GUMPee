@@ -226,9 +226,15 @@ section h1 {
   #home .intro {
     grid-template-columns: 1fr;
     max-width: 100%;
+    gap: 0;
   }
   .texto-intro {
     padding: 40px 0;
+  }
+  .intro-bg {
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 40px;
   }
   .intro-bg::after {
     display: none;
