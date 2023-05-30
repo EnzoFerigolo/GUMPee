@@ -84,7 +84,7 @@ section h1 {
 .lista li {
   position: relative;
   cursor: pointer;
-  margin-bottom: 8px;
+  margin-top: 16px;
   max-width: 32ch;
 }
 

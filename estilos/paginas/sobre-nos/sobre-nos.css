@@ -92,7 +92,7 @@
   transform: rotate3d(0, 1, 0, 180deg);
 }
 
-.wave2::after {
+#sobre-nos .wave2::after {
   content: "";
   display: block;
   background: url("/imgs/decorador-peça.png") no-repeat;

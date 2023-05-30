@@ -9,21 +9,87 @@
 #servicos .wave2 {
   position: relative;
   height: auto;
+  background-color: var(--cor-a-2);
+}
+
+#servicos main {
+  background-color: var(--cor-a-3);
 }
 
 #servicos .intro-bg {
   background-color: var(--cor-a-2);
+  padding-bottom: 0;
 }
 
-#servicos h1 {
-  margin-bottom: 20px;
+.servicos-img {
+  place-content: center;
+}
+
+.servicos-img img {
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  object-fit: cover;
+  max-height: 420px;
+  object-position: top;
+  aspect-ratio: 1/2;
+  width: 100%;
 }
 
 .texto-servicos {
   padding-top: 160px;
-  background: url("/imgs/nuvens.png") no-repeat right;
+  gap: 20px;
+  background: url("/imgs/nuvens-e-balao.png") no-repeat right;
+  padding-bottom: 80px;
 }
 
-.texto-servicos p {
+.servicos h1 {
+  margin-bottom: 0;
+}
+
+.servicos p {
   max-width: 45ch;
+}
+
+.palestras {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.palestras h1::after {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url("/imgs/icones/coroa-rei.png") center;
+}
+
+.palestras::after {
+  content: "";
+  display: block;
+  background: url("/imgs/decorador-peça.png");
+  width: 100px;
+  height: 150px;
+  background-size: contain;
+  position: absolute;
+  bottom: -80px;
+  right: 5%;
+  z-index: 1;
+}
+
+.workshops {
+  background-color: var(--cor-a-3);
+}
+
+.workshops h1::after {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: url("/imgs/icones/coroa-rainha.png") center;
+}
+
+@media (max-width: 800px) {
+  .texto-servicos {
+    background: url("/imgs/nuvens.png");
+  }
 }
