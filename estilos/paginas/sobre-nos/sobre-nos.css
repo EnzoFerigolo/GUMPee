@@ -81,12 +81,15 @@
 }
 
 .wave2 {
-  transform: rotate3d(0, 1, 0, 180deg);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
+}
+
+#sobre-nos .wave2 {
+  transform: rotate3d(0, 1, 0, 180deg);
 }
 
 .wave2::after {

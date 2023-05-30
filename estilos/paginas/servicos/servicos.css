@@ -1,13 +1,29 @@
-#servicos .wave2 .shape-fill,
-#servicos .wave .shape-fill {
-  fill: #fff;
-}
-
 #servicos .wave {
   transform: rotate3d(0, 1, 0, 180deg);
 }
 
+#servicos .wave .shape-fill {
+  fill: #fff;
+}
+
+#servicos .wave2 {
+  position: relative;
+  height: auto;
+}
+
+#servicos .intro-bg {
+  background-color: var(--cor-a-2);
+}
+
+#servicos h1 {
+  margin-bottom: 20px;
+}
+
 .texto-servicos {
   padding-top: 160px;
-  padding-bottom: 160px;
+  background: url("/imgs/nuvens.png") no-repeat right;
+}
+
+.texto-servicos p {
+  max-width: 45ch;
 }
