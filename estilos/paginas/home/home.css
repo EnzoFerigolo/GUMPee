@@ -97,7 +97,7 @@ section h1 {
   background: url("/imgs/icone-x.svg") no-repeat;
   display: inline-block;
   position: absolute;
-  left: -48px;
+  left: -40px;
   top: 6px;
   width: 24px;
   height: 24px;
@@ -219,10 +219,10 @@ section h1 {
   .lista {
     place-self: center;
   }
-  .lista li::before {
-    background-size: 75%;
+  .lista button::before {
+    background-size: 70%;
     left: -28px;
-    top: 6px;
+    top: 0.5rem;
   }
   .texto-cf {
     max-width: 42ch;

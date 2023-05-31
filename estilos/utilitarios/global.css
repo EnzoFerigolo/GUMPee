@@ -13,6 +13,19 @@ button {
   padding: 0;
 }
 
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  background-color: none;
+}
+
 body {
   background-color: #fff;
 }
@@ -41,7 +54,7 @@ dd {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
-  padding: 0 64px;
+  padding: 0 60px;
   margin: 0 auto;
   gap: 80px;
 }
@@ -79,7 +92,8 @@ dd {
   }
   .container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
+    padding: 0 40px;
   }
   .col-2 {
     grid-column: 1;

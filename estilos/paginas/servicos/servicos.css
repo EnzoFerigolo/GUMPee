@@ -42,10 +42,6 @@
   padding-bottom: 80px;
 }
 
-.texto-servicos h1 {
-  margin-bottom: 0;
-}
-
 .servicos p {
   max-width: 45ch;
 }
@@ -55,13 +51,13 @@
   padding-bottom: 20px;
 }
 
-.palestras h1::after {
+.palestras h1::before {
   content: "";
-  display: inline-block;
+  display: flex;
   height: 40px;
   width: 40px;
-  margin-left: 20px;
-  background: url("/imgs/icones/coroa-rei.png") center;
+  background: url("/imgs/icones/coroa-rei.png");
+  background-size: contain;
 }
 
 .palestras::after {
@@ -86,12 +82,14 @@
   background-color: var(--cor-a-3);
 }
 
-.workshops h1::after {
+.workshops h1::before {
   content: "";
-  display: inline-block;
+  display: flex;
   height: 40px;
   width: 40px;
-  background: url("/imgs/icones/coroa-rainha.png") center;
+  gap: 40px;
+  background: url("/imgs/icones/coroa-rainha.png");
+  background-size: contain;
 }
 
 @media (max-width: 800px) {
@@ -101,5 +99,8 @@
   .palestras::after {
     right: 80%;
     bottom: -120px;
+  }
+  .palestras::after {
+    display: none;
   }
 }

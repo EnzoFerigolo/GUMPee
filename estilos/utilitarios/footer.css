@@ -108,6 +108,9 @@
 }
 
 @media (max-width: 800px) {
+  .footer {
+    padding: 60px;
+  }
   .footer nav {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
