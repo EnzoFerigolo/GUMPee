@@ -17,7 +17,6 @@
 
 .font-1-m {
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 2.5rem;
   line-height: 1.25;
@@ -53,7 +52,7 @@
 
 .font-3-bold {
   font-family: "Source Sans Pro";
-  font-weight: 600;
+  font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.4;
 }
