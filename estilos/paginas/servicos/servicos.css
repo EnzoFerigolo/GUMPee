@@ -42,7 +42,7 @@
   padding-bottom: 80px;
 }
 
-.servicos h1 {
+.texto-servicos h1 {
   margin-bottom: 0;
 }
 
@@ -60,6 +60,7 @@
   display: inline-block;
   height: 40px;
   width: 40px;
+  margin-left: 20px;
   background: url("/imgs/icones/coroa-rei.png") center;
 }
 
@@ -74,6 +75,11 @@
   bottom: -80px;
   right: 5%;
   z-index: 1;
+}
+
+.texto-palestras {
+  width: fit-content;
+  place-self: top;
 }
 
 .workshops {
@@ -91,5 +97,9 @@
 @media (max-width: 800px) {
   .texto-servicos {
     background: url("/imgs/nuvens.png");
+  }
+  .palestras::after {
+    right: 80%;
+    bottom: -120px;
   }
 }

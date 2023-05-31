@@ -81,14 +81,18 @@ section h1 {
   max-width: 40ch;
 }
 
-.lista li {
+.lista button {
+  padding-bottom: 12px;
   position: relative;
   cursor: pointer;
-  margin-top: 16px;
   max-width: 32ch;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.lista li::before {
+.lista button::before {
   content: "";
   background: url("/imgs/icone-x.svg") no-repeat;
   display: inline-block;
@@ -97,6 +101,19 @@ section h1 {
   top: 6px;
   width: 24px;
   height: 24px;
+}
+
+.lista dd {
+  display: none;
+}
+
+.lista dd.ativa {
+  display: block;
+}
+
+.lista button[aria-expanded="true"]::before {
+  transform: rotate(45deg);
+  transition: .3s;
 }
 
 .na-bg {

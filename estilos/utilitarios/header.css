@@ -47,8 +47,7 @@
   position: absolute;
 }
 
-.header li a:hover::after {
-  display: block;
+.header li a:hover::after, .header li a.ativo::after {
   width: 100%;
 }
 
