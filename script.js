@@ -26,6 +26,23 @@ itemLista.forEach((item) => {
       "aria-expanded",
       resposta.classList.contains("ativa")
     );
-    console.log(controls);
+  });
+});
+
+// Perguntas frequentes
+
+const itemPergunta = document.querySelectorAll(".faq button");
+
+itemPergunta.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const controls = event.currentTarget.getAttribute("aria-controls");
+    const resposta = document.getElementById(controls);
+
+    resposta.classList.toggle("ativa");
+
+    event.currentTarget.setAttribute(
+      "aria-expanded",
+      resposta.classList.contains("ativa")
+    );
   });
 });

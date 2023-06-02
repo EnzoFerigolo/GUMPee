@@ -1,3 +1,145 @@
+#contato body {
+  background: var(--cor-a-3);
+}
+
 .contato-bg {
-  background-color: var(--cor-a-3);
+  background: var(--cor-a-3) url("/imgs/fundos/onda-form.svg") no-repeat bottom;
+}
+
+.contato h1 {
+  padding: 80px 0;
+  max-width: 20ch;
+}
+
+form.container {
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+  padding-bottom: 160px;
+}
+
+.form-local,
+.form-contato {
+  display: grid;
+  gap: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 60px;
+}
+
+.form-local {
+  background: var(--cor-azul);
+  border-radius: 5px 0 0 5px;
+  place-content: start;
+}
+
+.form-local h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.lista-local {
+  height: 100%;
+}
+
+.lista-local li {
+  display: flex;
+  padding: 12px 0;
+  gap: 28px;
+}
+
+#contato .icones-redes {
+  height: 100%;
+  margin-top: auto;
+}
+
+.form-contato {
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  border-radius: 0 5px 5px 0;
+  align-items: end;
+}
+
+form label {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  border: 2px solid #eeeeee;
+  border-radius: 5px;
+  padding: 12px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq-bg {
+  background-color: var(--cor-a-2);
+  padding-bottom: 120px;
+}
+
+.faq {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.pergunta {
+  padding: 20px 40px;
+}
+
+.pergunta:nth-of-type(odd) {
+  background-color: #f5f5f5;
+  border: 2px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.pergunta button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  text-align: left;
+  width: 100%;
+  background: none;
+}
+
+.pergunta button::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("/imgs/icone-x-amarelo.svg");
+}
+
+.pergunta button[aria-expanded="true"]::after {
+  transform: rotate(45deg);
+  transition: .3s;
+}
+
+.pergunta dd {
+  display: none;
+}
+
+.pergunta dd.ativa {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  form.container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .form-local,
+  .form-contato {
+    padding: 40px;
+  }
+  .form-contato {
+    grid-template-columns: 1fr;
+  }
 }

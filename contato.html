@@ -44,7 +44,163 @@
           Entre em <span>contato</span> conosco.
         </h1>
       </div>
+
+      <form action="./" class="container">
+        <div class="form-local cor-branco">
+          <h2 class="font-2-m">Onde nos encontrar</h2>
+          <ul class="lista-local font-3-regular">
+            <li>
+              <div><img src="/imgs/icones/email.svg" alt="" /></div>
+              <a href="mailto:gumpee@gmail.com">gumpee@gmail.com</a>
+            </li>
+            <li>
+              <div><img src="/imgs/icones/telefone.svg" alt="" /></div>
+              <a href="tel:+55 55 99999999">(55) 99999-9999</a>
+            </li>
+            <li>
+              <div><img src="/imgs/icones/local.svg" alt="" /></div>
+              <a href="https://goo.gl/maps/9GB5s8ryfmk7PGTq6">Itajaí- SC</a>
+            </li>
+          </ul>
+          <div class="icones-redes">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="/imgs/icones/youtube-branco.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="/imgs/icones/whatsapp-branco.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="/imgs/icones/instagram-branco.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="/imgs/icones/facebook-branco.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-contato">
+          <div>
+            <label for="nome" class="font-2-m">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+          </div>
+          <div>
+            <label for="telefone" class="font-2-m">Telefone</label>
+            <input
+              type="telefone"
+              id="telefone"
+              name="telefone"
+              placeholder="(55) 99999-0000" />
+          </div>
+          <div class="col-2">
+            <label for="email" class="font-2-m">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exemplo@exemplo.com" />
+          </div>
+          <div class="col-2">
+            <label for="mensagem" class="font-2-m">Mensagem</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              rows="5"
+              placeholder="O que você precisa?"></textarea>
+          </div>
+          <button class="btn1 col-2 font-2-m">Enviar mensagem</button>
+        </div>
+      </form>
     </main>
+
+    <article aria-label="Perguntas frequentes" class="faq-bg">
+      <div class="container">
+        <h1 class="font-1-xl cor-a4 col-2">
+          <span class="cor-branco">Perguntas</span> frequentes<span
+            class="cor-branco"
+            >.</span
+          >
+        </h1>
+        <div class="col-2 font-3-bold cor-a4 faq">
+          <div class="pergunta">
+            <dt>
+              <button
+                class="font-3-bold cor-a4"
+                aria-expanded="true"
+                aria-controls="pergunta-1">
+                Como funciona o aplicativo?
+              </button>
+            </dt>
+            <dd class="font-3-light cor-a3 ativa" id="pergunta-1">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              consequuntur rem nulla tempora sequi voluptatem aliquid sapiente
+              impedit doloribus blanditiis? Dolore autem alias at quibusdam
+              distinctio, veritatis minus dolores doloremque.
+            </dd>
+          </div>
+          <div class="pergunta">
+            <dt>
+              <button
+                class="font-3-bold cor-a4"
+                aria-expanded="false"
+                aria-controls="pergunta-2">
+                Desenvolva o relacionamento com um momento do dia somente de
+                vocês.
+              </button>
+            </dt>
+            <dd class="font-3-light cor-a3" id="pergunta-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              consequuntur rem nulla tempora sequi voluptatem aliquid sapiente
+              impedit doloribus blanditiis? Dolore autem alias at quibusdam
+              distinctio, veritatis minus dolores doloremque.
+            </dd>
+          </div>
+          <div class="pergunta">
+            <dt>
+              <button
+                class="font-3-bold cor-a4"
+                aria-expanded="false"
+                aria-controls="pergunta-3">
+                Desenvolva o relacionamento com um momento do dia somente de
+                vocês.
+              </button>
+            </dt>
+            <dd class="font-3-light cor-a3" id="pergunta-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              consequuntur rem nulla tempora sequi voluptatem aliquid sapiente
+              impedit doloribus blanditiis? Dolore autem alias at quibusdam
+              distinctio, veritatis minus dolores doloremque.
+            </dd>
+          </div>
+          <div class="pergunta">
+            <dt>
+              <button
+                class="font-3-bold cor-a4"
+                aria-expanded="false"
+                aria-controls="pergunta-4">
+                Desenvolva o relacionamento com um momento do dia somente de
+                vocês.
+              </button>
+            </dt>
+            <dd class="font-3-light cor-a3" id="pergunta-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              consequuntur rem nulla tempora sequi voluptatem aliquid sapiente
+              impedit doloribus blanditiis? Dolore autem alias at quibusdam
+              distinctio, veritatis minus dolores doloremque.
+            </dd>
+          </div>
+        </div>
+      </div>
+    </article>
 
     <article aria-label="Redes sociais da GUMPee" class="redes-bg">
       <div class="redes container">
@@ -133,22 +289,24 @@
             <p class="font-1-xs">©Copyright 2023 - Gumpee</p>
             <p class="font-1-xs">Políticas e privacidade</p>
           </div>
-          <div class="footer-redes">
+          <div class="icones-redes">
             <p class="font-1-xs">Siga-nos</p>
-            <ul>
-              <li>
-                <a href=""><img src="/imgs/ícones/youtube.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="/imgs/ícones/whatsapp.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="/imgs/ícones/instagram.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href=""><img src="/imgs/ícones/facebook.svg" alt="" /></a>
-              </li>
-            </ul>
+            <div>
+              <ul>
+                <li>
+                  <a href=""><img src="/imgs/icones/youtube.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/imgs/icones/whatsapp.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/imgs/icones/instagram.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/imgs/icones/facebook.svg" alt="" /></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
