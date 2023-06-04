@@ -11,6 +11,11 @@
   height: 100%;
 }
 
+.intro .btn1 {
+  display: inline-block;
+  margin-right: 12px;
+}
+
 #home .intro-bg::after {
   content: "";
   background: url("/imgs/img-principal-home.png") no-repeat left bottom;
@@ -57,7 +62,7 @@ section h1 {
 }
 
 .ca p {
-  max-width: 38ch;
+  max-width: 60ch;
   margin: 0 auto;
 }
 
@@ -72,13 +77,9 @@ section h1 {
   z-index: 2;
 }
 
-.texto-cf h1 {
-  margin-bottom: 40px;
-}
-
+.texto-cf h1,
 .texto-cf p {
   margin-bottom: 40px;
-  max-width: 40ch;
 }
 
 .lista button {
@@ -113,7 +114,7 @@ section h1 {
 
 .lista button[aria-expanded="true"]::before {
   transform: rotate(45deg);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .na-bg {
@@ -122,7 +123,7 @@ section h1 {
 }
 
 .na {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .btn1.container {
@@ -143,7 +144,7 @@ section h1 {
 }
 
 .parceiros h1,
-.sintomas h1 {
+.sintomas-texto h1 {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -174,31 +175,32 @@ section h1 {
   margin-top: 80px;
 }
 
-.sintomas-lista {
+.sintomas {
   margin-top: 80px;
   gap: 40px;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: start;
   place-content: center;
   place-self: center;
 }
 
-.sintomas-lista li::before {
+.sintomas h2::before {
   content: "";
-  display: block;
-  background-image: url("/imgs/decorador-lista-sintomas.png");
+  display: inline-block;
+  margin-right: 12px;
+  background: url("/imgs/decorador-lista-sintomas.png");
   width: 20px;
   height: 20px;
-  margin-bottom: 8px;
 }
 
-.sintomas-lista li::after {
+.sintomas h2::after {
+  margin-top: 8px;
+  margin-bottom: 12px;
   content: "";
   display: block;
-  width: inherit;
+  width: 100%;
   height: 2px;
-  margin-top: 8px;
-  background-color: #dede;
+  background-color: #e3e3e3;
 }
 
 @media (max-width: 800px) {
@@ -212,6 +214,16 @@ section h1 {
   .na,
   .texto-intro {
     grid-template-columns: 1fr;
+  }
+  .cf,
+  .cf button {
+    text-align: center;
+  }
+  .na h1 {
+    margin-top: 40px;
+  }
+  .parceiros h1 {
+    margin: 0;
   }
   #home .texto-intro p {
     max-width: 30ch;
@@ -236,6 +248,9 @@ section h1 {
   }
   .decorador-balao {
     margin-bottom: 64px;
+  }
+  .sintomas {
+    grid-template-columns: 1fr;
   }
 }
 

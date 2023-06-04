@@ -118,7 +118,6 @@ form textarea {
   grid-template-columns: 1fr auto;
   text-align: left;
   width: 100%;
-  background: none;
 }
 
 .pergunta button::after {

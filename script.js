@@ -29,6 +29,23 @@ itemLista.forEach((item) => {
   });
 });
 
+// Tipos de autismo
+
+const itemAutismo = document.querySelectorAll(".sintomas-lista button");
+
+itemAutismo.forEach((item) => {
+  item.addEventListener("click", (event) => {
+    const controls = event.currentTarget.getAttribute("aria-controls");
+    const nivel = document.getElementById(controls);
+
+    nivel.classList.toggle("ativa");
+    event.currentTarget.setAttribute(
+      "aria-expanded",
+      nivel.classList.contains("ativa")
+    );
+  });
+});
+
 // Perguntas frequentes
 
 const itemPergunta = document.querySelectorAll(".faq button");
