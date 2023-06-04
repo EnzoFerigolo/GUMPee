@@ -80,13 +80,27 @@ form textarea {
 
 .faq-bg {
   background-color: var(--cor-a-2);
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 }
 
 .faq {
-  padding: 40px;
+  padding: 60px;
   background-color: #fff;
   border-radius: 5px;
+  position: relative;
+}
+
+.faq::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 140px;
+  width: 100px;
+  background: url("/imgs/decorador-peça.png") no-repeat;
+  background-size: contain;
+  rotate: -45deg;
+  top: -60px;
+  right: -20px;
 }
 
 .pergunta {
@@ -110,6 +124,7 @@ form textarea {
 .pergunta button::after {
   content: "";
   display: inline-block;
+  margin: auto 0;
   width: 24px;
   height: 24px;
   background: url("/imgs/icone-x-amarelo.svg");
@@ -117,20 +132,33 @@ form textarea {
 
 .pergunta button[aria-expanded="true"]::after {
   transform: rotate(45deg);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .pergunta dd {
   display: none;
+  margin-top: 12px;
 }
 
 .pergunta dd.ativa {
   display: block;
 }
 
+#contato .redes-bg {
+  margin-top: 0;
+  background-color: #fff;
+  box-shadow: inset 0px 120px var(--cor-a-2), inset 0px -120px var(--cor-a-3);
+}
+
 @media (max-width: 800px) {
   form.container {
     grid-template-columns: 1fr;
+  }
+  #contato .redes-bg {
+    box-shadow: none;
+  }
+  #contato .redes-bg::after {
+    top: 10%;
   }
 }
 
