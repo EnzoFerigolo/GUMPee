@@ -107,6 +107,12 @@
   gap: 20px;
 }
 
+.icones-redes img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 800px) {
   .footer {
     padding: 60px;

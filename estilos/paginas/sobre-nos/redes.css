@@ -55,6 +55,11 @@
   margin-top: 20px;
 }
 
+.redes-texto li img {
+  max-height: 40px;
+  max-width: 40px;
+}
+
 .redes-texto li:last-of-type {
   margin-bottom: 0;
 }

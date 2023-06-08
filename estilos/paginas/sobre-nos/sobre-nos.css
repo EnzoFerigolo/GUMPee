@@ -40,6 +40,10 @@
   max-width: 10ch;
 }
 
+.trajetoria {
+  margin-bottom: 80px;
+}
+
 .trajetoria-img {
   z-index: 0;
 }

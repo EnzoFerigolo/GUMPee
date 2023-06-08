@@ -1,0 +1,92 @@
+#apoie p {
+  max-width: 60ch;
+}
+
+.apoie-bg {
+  background: url("/imgs/fundos/apoie-fundo.png") top no-repeat, var(--cor-a-3);
+  position: relative;
+}
+
+.apoie {
+  padding-top: 80px;
+}
+
+.apoie-img {
+  max-width: 100%;
+  overflow: visible;
+}
+
+.apoie-img img {
+  max-width: 110%;
+  height: 100%;
+  object-fit: cover;
+  overflow: visible;
+}
+
+.apoie-txt {
+  display: grid;
+  gap: 40px;
+  align-items: start;
+  place-content: start;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+#apoie .wave3 {
+  position: relative;
+}
+
+#apoie .wave3 svg {
+  position: absolute;
+  bottom: -20px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.doacoes {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+.doacoes h2 {
+  margin-bottom: 40px;
+}
+
+#apoie .doar {
+  background: url("/imgs/fundos/waves-invertida.svg") no-repeat var(--cor-a-3);
+}
+
+#apoie .doar .container::before {
+  right: 70%;
+}
+
+@media (max-width: 1000px) {
+  .apoie-img img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .apoie-bg {
+    background: url("/imgs/fundos/apoie-fundo.png") top left no-repeat,
+      var(--cor-a-3);
+  }
+  .apoie-img img  {
+    height: auto;
+  }
+  .apoie-txt {
+    grid-row: 1;
+    padding-bottom: 0;
+  }
+  #apoie .wave3 svg {
+    bottom: 0;
+  }
+  .doacoes {
+    width: 65%;
+  }
+  #apoie .doar .container::before {
+    right: 50%;
+    top: -60px;
+  }
+}
