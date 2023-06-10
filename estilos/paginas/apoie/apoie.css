@@ -3,7 +3,7 @@
 }
 
 .apoie-bg {
-  background: url("/imgs/fundos/apoie-fundo.png") top no-repeat, var(--cor-a-3);
+  background: url("/imgs/fundos/apoie-fundo.png") no-repeat, var(--cor-a-3);
   position: relative;
 }
 
@@ -30,6 +30,7 @@
   place-content: start;
   padding-bottom: 80px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 #apoie .wave3 {
@@ -45,7 +46,7 @@
 
 .doacoes {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   margin: 0 auto;
 }
 

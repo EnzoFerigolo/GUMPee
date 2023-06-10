@@ -53,6 +53,11 @@
   margin-bottom: 16px;
 }
 
+.pix img {
+  border: none;
+  margin-bottom: 24px;
+}
+
 @media (max-width: 800px) {
   .doar img {
     display: none;
@@ -61,6 +66,9 @@
     position: static;
     max-width: 400px;
     margin: 0 auto;
+  }
+  .pix img {
+    display: block;
   }
   .doar .container::before {
     right: 50%;

@@ -2,12 +2,12 @@
   margin-top: 80px;
   background-color: #fff;
   box-shadow: inset 0px 120px var(--cor-a-3), inset 0px -120px var(--cor-a-3);
-  position: relative;
 }
 
 .redes-img {
   place-self: center;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .redes-img img {
@@ -17,17 +17,17 @@
   max-height: 800px;
 }
 
-.redes-bg::after {
+.redes-img::before {
   content: "";
   display: block;
   background: url("/imgs/fundos/fundo-verde.svg") no-repeat;
   background-size: contain;
-  width: 100%;
-  max-width: 60%;
-  height: 860px;
+  height: 250%;
+  width: 250%;
+  right: -20%;
+  top: 40px;
   position: absolute;
-  bottom: -15%;
-  left: -10%;
+  z-index: -1;
 }
 
 .redes-texto {
