@@ -11,10 +11,15 @@
   height: 100%;
 }
 
-.intro .btn1 {
-  display: inline-block;
-  margin-right: 12px;
+#home .btn3::before {
+  display: none;
 }
+
+.botoes-intro {
+  display: flex;
+  gap: 20px;
+}
+
 
 #home .intro-bg::after {
   content: "";

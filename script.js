@@ -37,7 +37,6 @@ itemPergunta.forEach((item) => {
   item.addEventListener("click", (event) => {
     const controls = event.currentTarget.getAttribute("aria-controls");
     const resposta = document.getElementById(controls);
-
     resposta.classList.toggle("ativa");
 
     event.currentTarget.setAttribute(
