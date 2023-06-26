@@ -1,6 +1,7 @@
-#cadastro .form-contato a {
+#cadastro .form-contato a,
+#login .form-contato a {
   font-size: 1rem;
-  color: #C3C3C3;
+  color: #c3c3c3;
   margin: auto 0 auto auto;
 }
 
@@ -10,19 +11,19 @@
   align-items: center;
 }
 
-#cadastro .redes-bg {
+#cadastro .redes-bg, #login .redes-bg {
   margin-top: 0;
   box-shadow: inset 0px 120px var(--cor-a-2), inset 0px -120px var(--cor-a-3);
 }
 
 @media (max-width: 950px) {
-  #cadastro .redes-bg {
+  #cadastro .redes-bg, #login .redes-bg {
     box-shadow: inset 0px 60px var(--cor-a-2), inset 0px -60px var(--cor-a-3);
   }
 }
 
 @media (max-width: 600px) {
-  #cadastro .form-contato a {
+  #cadastro .form-contato a, #login .form-contato a {
     grid-column: auto;
     grid-row: auto;
   }
