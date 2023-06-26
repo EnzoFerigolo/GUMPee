@@ -8,7 +8,6 @@
 
 .contato h1 {
   padding: 80px 0;
-  max-width: 20ch;
 }
 
 form.container {
@@ -161,12 +160,12 @@ form textarea {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .form-local,
   .form-contato {
     padding: 40px;
   }
   .form-contato {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }

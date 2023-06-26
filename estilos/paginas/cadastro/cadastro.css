@@ -1,7 +1,29 @@
 #cadastro .form-contato a {
   font-size: 1rem;
   color: #C3C3C3;
-  grid-column: 2;
-  grid-row: 4;
   margin: auto 0 auto auto;
+}
+
+.botoes-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#cadastro .redes-bg {
+  margin-top: 0;
+  box-shadow: inset 0px 120px var(--cor-a-2), inset 0px -120px var(--cor-a-3);
+}
+
+@media (max-width: 950px) {
+  #cadastro .redes-bg {
+    box-shadow: inset 0px 60px var(--cor-a-2), inset 0px -60px var(--cor-a-3);
+  }
+}
+
+@media (max-width: 600px) {
+  #cadastro .form-contato a {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }

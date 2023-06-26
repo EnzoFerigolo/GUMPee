@@ -14,6 +14,10 @@ button {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   display: inline-block;
   cursor: pointer;
@@ -84,6 +88,7 @@ dd {
 .btn1 {
   background: var(--cor-principal);
   color: var(--cor-p-2);
+
 }
 
 .btn1:hover {

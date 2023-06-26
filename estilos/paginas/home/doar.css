@@ -4,16 +4,20 @@
     var(--cor-a-2) 30%,
     var(--cor-a-3) 30%
   );
-  z-index: 2;
+
 }
 
 .doar img {
   border: 10px solid #ffffff;
   height: auto;
-  max-width: 100%;
+  width: 100%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: 1;
   margin-bottom: 10px;
+}
+
+.doar img.col-2 {
+  min-height: 800px;
+  object-fit: cover;
 }
 
 .doar .container {
@@ -43,7 +47,6 @@
   top: 15%;
   z-index: 2;
 }
-
 .doar-texto p {
   margin-bottom: 24px;
 }

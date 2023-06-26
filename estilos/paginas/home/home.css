@@ -11,15 +11,10 @@
   height: 100%;
 }
 
-#home .btn3::before {
-  display: none;
-}
-
 .botoes-intro {
   display: flex;
   gap: 20px;
 }
-
 
 #home .intro-bg::after {
   content: "";
@@ -162,13 +157,13 @@ section h1 {
 .parceiros-conteudo ul {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 40px;
   margin: 0;
   height: fit-content;
 }
 
 .parceiros-conteudo img {
-  height: 200px;
+  height: 120px;
   object-fit: cover;
 }
 
