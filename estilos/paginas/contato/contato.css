@@ -150,12 +150,15 @@ form textarea {
   box-shadow: inset 0px 120px var(--cor-a-2), inset 0px -120px #fff;
 }
 
+@media (max-width: 950px) {
+  #contato .redes-bg {
+    box-shadow: none;
+  }
+}
+
 @media (max-width: 800px) {
   form.container {
     grid-template-columns: 1fr;
-  }
-  #contato .redes-bg {
-    box-shadow: none;
   }
   #contato .redes-bg::after {
     top: 10%;

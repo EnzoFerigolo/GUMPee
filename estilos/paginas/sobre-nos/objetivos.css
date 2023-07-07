@@ -3,23 +3,17 @@ body {
 }
 
 .objetivos {
-  margin-top: 40px;
   place-content: center;
   position: relative;
 }
 
-.objetivos h1 {
-  text-align: center;
-  margin: 0;
-}
-
-.objetivos-paragrafo {
-  text-align: right;
+.objetivos p { 
+  margin-bottom: 40px;
 }
 
 .video {
   gap: 0;
-  margin: auto 0;
+  margin: 80px 0;
   aspect-ratio: 16/9;
   position: relative;
 }
@@ -59,8 +53,11 @@ body {
 }
 
 @media (max-width: 800px) {
-  .objetivos-paragrafo {
-    text-align: center;
+  .objetivos {
+    max-width: 520px;
+  }
+  .objetivos-img img {
+    max-height: 400px;
   }
 }
 
