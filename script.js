@@ -46,18 +46,16 @@ itemPergunta.forEach((item) => {
   });
 });
 
-// Modal WhatsApp
+// Botão do WhatsApp
 
-// const botao = document.querySelector(".botao-wpp");
-// const modal = document.querySelector("dialog");
-// const botaoFechar = document.querySelector("dialog button");
-// console.log(botaoFechar);
-// console.log(botao);
+const footerAltura = document.querySelector("footer").offsetTop;
 
-// botao.onclick = function() {
-//   modal.show();
-// }
+const whats = document.querySelector(".whats");
 
-// botaoFechar.onclick = function() {
-//   modal.close();
-// }
+var altura = 0;
+window.addEventListener("scroll", () => {
+  altura = window.scrollY;
+  if (altura >= footerAltura) {
+    whats.classList.add("hide");
+  } else whats.classList.remove("hide");
+});

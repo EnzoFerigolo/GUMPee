@@ -140,7 +140,7 @@ dd {
   padding: 20px;
   background: #63be68;
   border-radius: 50%;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 .whats:hover {
@@ -148,6 +148,11 @@ dd {
   transform: scale(1.2);
   bottom: 7%;
   transition: 0.2s;
+}
+
+.hide {
+  transform: scale(0);
+  transition: transform 0.2s;
 }
 
 @media (max-width: 800px) {
