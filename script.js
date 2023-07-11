@@ -45,3 +45,19 @@ itemPergunta.forEach((item) => {
     );
   });
 });
+
+// Modal WhatsApp
+
+// const botao = document.querySelector(".botao-wpp");
+// const modal = document.querySelector("dialog");
+// const botaoFechar = document.querySelector("dialog button");
+// console.log(botaoFechar);
+// console.log(botao);
+
+// botao.onclick = function() {
+//   modal.show();
+// }
+
+// botaoFechar.onclick = function() {
+//   modal.close();
+// }
