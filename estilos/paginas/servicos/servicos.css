@@ -63,7 +63,7 @@
 .palestras::after {
   content: "";
   display: block;
-  background: url("/imgs/decorador-peça.png");
+  background: url("/imgs/decorador-peca.png");
   width: 100px;
   height: 150px;
   background-size: contain;

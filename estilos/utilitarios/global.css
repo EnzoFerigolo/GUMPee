@@ -152,7 +152,7 @@ dd {
 
 .hide {
   transform: scale(0);
-  transition: transform 0.2s;
+  transition: 0.2s ease-out;
 }
 
 @media (max-width: 800px) {

@@ -55,7 +55,7 @@
 .footer::before {
   content: "";
   display: inline-block;
-  background: url("/imgs/decorador-peça.png") no-repeat;
+  background: url("/imgs/decorador-peca.png") no-repeat;
   background-size: contain;
   rotate: -140deg;
   width: 100px;

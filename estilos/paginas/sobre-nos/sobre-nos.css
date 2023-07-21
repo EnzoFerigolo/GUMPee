@@ -86,7 +86,7 @@
 #sobre-nos .wave2::after {
   content: "";
   display: block;
-  background: url("/imgs/decorador-peça.png") no-repeat;
+  background: url("/imgs/decorador-peca.png") no-repeat;
   background-size: contain;
   height: 100%;
   width: 80px;

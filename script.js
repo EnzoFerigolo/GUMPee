@@ -48,14 +48,13 @@ itemPergunta.forEach((item) => {
 
 // Botão do WhatsApp
 
-const footerAltura = document.querySelector("footer").offsetTop;
+var footerAltura = document.querySelector("footer").offsetTop;
 
-const whats = document.querySelector(".whats");
+var whats = document.querySelector(".whats");
 
-var altura = 0;
 window.addEventListener("scroll", () => {
-  altura = window.scrollY;
-  if (altura >= footerAltura) {
+  console.log(window.scrollY);
+  if (window.scrollY >= footerAltura - 400) {
     whats.classList.add("hide");
   } else whats.classList.remove("hide");
 });

@@ -41,7 +41,7 @@ body {
 .video::before {
   content: "";
   display: block;
-  background: url("/imgs/decorador-peça.png") no-repeat;
+  background: url("/imgs/decorador-peca.png") no-repeat;
   background-size: contain;
   height: 120px;
   width: 120px;
