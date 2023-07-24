@@ -54,7 +54,7 @@ var whats = document.querySelector(".whats");
 
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);
-  if (window.scrollY >= footerAltura - 400) {
+  if (window.scrollY >= footerAltura - 500) {
     whats.classList.add("hide");
   } else whats.classList.remove("hide");
 });

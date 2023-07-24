@@ -1,0 +1,40 @@
+#parceiros body {
+  background: var(--cor-a-3);
+}
+
+.parceiros-bg {
+  background: var(--cor-a-3) url("/imgs/fundos/elipses_fundo_parceiros.svg")
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.parceiros h1 {
+  padding: 0px 0;
+  text-align: left;
+}
+
+.parceiros ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  place-content: center;
+  place-items: center;
+  align-content: center;
+  gap: 48px;
+}
+
+.parceiros ul img {
+  max-width: 200px;
+  height: auto;
+  filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.4));
+}
+
+@media (max-width: 800px) {
+  .parceiros ul img {
+    max-width: 120px;
+  }
+}

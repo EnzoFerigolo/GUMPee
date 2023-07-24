@@ -149,22 +149,82 @@ section h1 {
   margin-bottom: 40px;
 }
 
-.parceiros-conteudo {
-  padding: 60px;
-  overflow: scroll;
+.parceiros .font-1-l {
+  max-width: 100ch;
+  gap: 0;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-.parceiros-conteudo ul {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin: 0;
-  height: fit-content;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.parceiros-conteudo img {
-  height: 120px;
-  object-fit: cover;
+.logos {
+  overflow: hidden;
+  padding: 20px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffcfc8);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+@media (max-width: 650px) {
+  .logos:before,
+  .logos:after {
+    background: none;
+  }
+  .logos-slide img {
+    max-height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 90s slide infinite linear;
+}
+
+.logos-slide img {
+  max-height: 120px;
+  box-sizing: border-box;
+  width: auto;
+  margin: 40px;
+  filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.4));
+}
+
+.decorador-balao {
+  animation: float 3s infinite;
 }
 
 .sintomas-texto {

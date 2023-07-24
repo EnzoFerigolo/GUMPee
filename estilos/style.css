@@ -21,6 +21,9 @@
 @import "/estilos/paginas/sobre-nos/redes.css";
 @import "/estilos/paginas/sobre-nos/desenvolvedores.css";
 
+/* Parceiros */
+@import "/estilos/paginas/parceiros/parceiros.css";
+
 /* Serviços */
 @import "/estilos/paginas/servicos/servicos.css";
 
