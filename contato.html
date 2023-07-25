@@ -8,6 +8,7 @@
     <meta
       name="description"
       content="Contar histórias de forma fantástica nunca foi tão fácil." />
+    <link rel="icon" type="image/png" href="/imgs/decorador-balao.png" />
     <link rel="stylesheet" href="/estilos/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,7 +46,7 @@
         </h1>
       </div>
 
-      <form action="./" class="container">
+      <form action="./enviar.php" method="post" class="container">
         <div class="form-local cor-branco">
           <h2 class="font-2-m">Onde nos encontrar</h2>
           <ul class="lista-local font-3-regular">
@@ -111,7 +112,8 @@
               type="email"
               id="email"
               name="email"
-              placeholder="exemplo@exemplo.com" />
+              placeholder="exemplo@email.com"
+              required />
           </div>
           <div class="col-2">
             <label for="mensagem" class="font-2-m">Mensagem</label>
@@ -119,7 +121,8 @@
               name="mensagem"
               id="mensagem"
               rows="5"
-              placeholder="O que você precisa?"></textarea>
+              placeholder="O que você precisa?"
+              required></textarea>
           </div>
           <button class="btn1 col-2 font-2-m">Enviar mensagem</button>
         </div>
@@ -422,5 +425,6 @@
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="/formulario.js"></script>
   </body>
 </html>
