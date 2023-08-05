@@ -7,11 +7,7 @@
 #sobre-nos .intro {
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 20px;
-}
-
-.intro-img {
-  z-index: 1;
+  margin: 40px 0;
 }
 
 #sobre-nos .intro-img img {
@@ -29,7 +25,7 @@
   top: -10%;
   left: 55%;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 #sobre-nos {
@@ -37,13 +33,22 @@
 }
 
 #sobre-nos .texto-intro h1 {
+  z-index: 3;
+}
+
+#sobre-nos .texto-intro h1 {
   max-width: 10ch;
+}
+
+.objetivos-img {
+  height: auto;
+  width: 100%;
 }
 
 .objetivos-img img {
   object-fit: cover;
   object-position: left top;
-  width: 100%;
+  max-width: 100%;
 }
 
 .objetivos-txt {
@@ -96,6 +101,12 @@
   left: 10%;
 }
 
+#trajetoria {
+  margin: 0 auto;
+  text-align: center;
+  gap: 0;
+}
+
 .wave2 .shape-fill,
 .wave .shape-fill {
   fill: #e3f2f7;
@@ -106,13 +117,6 @@
   display: block;
   width: calc(151% + 1.3px);
   z-index: 2;
-}
-
-.trajetoria {
-  padding: 0 60px;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 1000px;
 }
 
 @media (max-width: 800px) {
@@ -133,6 +137,9 @@
   }
   .objetivos-bg{
     padding: 0;
+  }
+  .objetivos-img img{
+    width: 100%;
   }
   .wave2::after {
     bottom: -50%;

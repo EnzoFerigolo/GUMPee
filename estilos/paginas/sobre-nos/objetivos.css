@@ -13,13 +13,13 @@ body {
 
 .video {
   gap: 0;
-  margin: 80px 0;
-  aspect-ratio: 16/9;
   position: relative;
+  align-self: center;
 }
 
 .video iframe {
-  height: 100%;
+  margin: auto 0;
+  aspect-ratio: 16/9;
   box-sizing: border-box;
   width: 100%;
   border: solid 12px #fff;

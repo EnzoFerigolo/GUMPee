@@ -4,8 +4,9 @@
 
 .header {
   max-width: 1200px;
+  gap: 20px;
   margin: 0 auto;
-  padding: 12px 40px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -13,15 +14,14 @@
 }
 
 .header ul {
-  max-width: fit-content;
   display: flex;
   flex-wrap: wrap;
   place-content: center;
+  gap: 24px;
 }
 
 .header li {
   place-self: center;
-  padding: 20px;
 }
 
 .header li a {
@@ -29,7 +29,7 @@
 }
 
 .header li a::after {
-  content: " ";
+  content: "";
   display: block;
   height: 2px;
   background-color: var(--cor-a3);
@@ -38,7 +38,8 @@
   position: absolute;
 }
 
-.header li a:hover::after, .header li a.ativo::after {
+.header li a:hover::after,
+.header li a.ativo::after {
   width: 100%;
 }
 

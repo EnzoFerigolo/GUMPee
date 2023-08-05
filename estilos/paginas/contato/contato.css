@@ -7,7 +7,7 @@
 }
 
 .contato h1 {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 form.container {
@@ -84,7 +84,7 @@ form textarea {
 }
 
 .faq {
-  padding: 60px;
+  padding: 40px;
   background-color: #fff;
   border-radius: 5px;
   position: relative;
@@ -166,11 +166,24 @@ form textarea {
 }
 
 @media (max-width: 600px) {
+  .contato h1 {
+    padding: 40px 0;
+  }
   .form-local,
   .form-contato {
     padding: 40px;
   }
   .form-contato {
     grid-template-columns: 1fr !important;
+  }
+  .pergunta {
+    padding: 20px;
+  }
+  .faq {
+    padding: 20px;
+  }
+  .faq-bg {
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 }
