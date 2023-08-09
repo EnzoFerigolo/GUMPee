@@ -9,7 +9,8 @@ li,
 dl,
 dt,
 dd,
-button {
+button,
+dialog {
   margin: 0;
   padding: 0;
 }

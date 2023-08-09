@@ -48,12 +48,26 @@ itemPergunta.forEach((item) => {
 
 // Botão do WhatsApp
 
-var footerAltura = document.querySelector("footer").offsetTop;
+const footerAltura = document.querySelector("footer").offsetTop;
 
-var whats = document.querySelector(".whats");
+const whats = document.querySelector(".whats");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= footerAltura - 500) {
     whats.classList.add("hide");
   } else whats.classList.remove("hide");
 });
+
+// Pop-up de doação
+
+const dialog = document.querySelector("dialog");
+const btnFechar = document.querySelector(".btn-fechar");
+
+if (dialog) {
+  dialog.showModal();
+  ["click", "touchend"].forEach((evento) => {
+    btnFechar.addEventListener(evento, () => {
+      dialog.close();
+    });
+  });
+}

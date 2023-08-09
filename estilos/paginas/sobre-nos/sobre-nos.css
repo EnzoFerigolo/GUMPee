@@ -34,9 +34,6 @@
 
 #sobre-nos .texto-intro h1 {
   z-index: 3;
-}
-
-#sobre-nos .texto-intro h1 {
   max-width: 10ch;
 }
 
@@ -135,10 +132,10 @@
     grid-row: 1;
     margin-top: 80px;
   }
-  .objetivos-bg{
+  .objetivos-bg {
     padding: 0;
   }
-  .objetivos-img img{
+  .objetivos-img img {
     width: 100%;
   }
   .wave2::after {
