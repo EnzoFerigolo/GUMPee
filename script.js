@@ -53,7 +53,7 @@ const footerAltura = document.querySelector("footer").offsetTop;
 const whats = document.querySelector(".whats");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= footerAltura - 500) {
+  if (window.scrollY >= footerAltura - 700) {
     whats.classList.add("hide");
   } else whats.classList.remove("hide");
 });

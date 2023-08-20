@@ -38,3 +38,9 @@
 
 /* Cadastro */
 @import "/estilos/paginas/cadastro-login/cadastro.css";
+
+/* Blog */
+@import "/estilos/paginas/blog/main.css";
+@import "/estilos/paginas/blog/veja-tambem.css";
+@import "/estilos/paginas/blog/dados-revelam.css";
+@import "/estilos/paginas/blog/videos-publicados.css";

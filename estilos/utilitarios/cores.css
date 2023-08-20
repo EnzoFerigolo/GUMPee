@@ -3,12 +3,14 @@
   --cor-p-1: #fbd335;
   --cor-p-2: #4e3703;
   --cor-a-3: #e3f2f7;
-  --cor-a-2: #B3E0F4;
+  --cor-a-2: #b3e0f4;
   --cor-a-1: #98d6e6;
   --cor-azul: #00afef;
   --cor-a2: #0078b4;
   --cor-a3: #002c4d;
   --cor-a4: #001b35;
+  --cinza: #828282;
+  --cinza-claro: #aaaaaa;
 }
 
 .cor-principal {
@@ -49,4 +51,12 @@
 
 .cor-branco {
   color: #fff;
+}
+
+.cinza {
+  color: var(--cinza);
+}
+
+.cinza-claro {
+  color: var(--cinza-claro);
 }
