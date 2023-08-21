@@ -17,7 +17,7 @@
       rel="stylesheet" />
   </head>
 
-  <body id="blog">
+  <body id="noticia">
     <header class="header-bg">
       <div class="header">
         <a href="/index.html"
@@ -41,114 +41,38 @@
       </div>
     </header>
 
-    <main>
-      <div class="main-img">
-        <img
-          height="400px"
-          src="/imgs/blog/main.png"
-          alt="Casal palestrando no evento de lançamento da GUMPee" />
+    <main class="container" style="grid-template-columns: 1fr; gap: 20px">
+      <h2 class="font-2-m cor-a2">ÚLTIMAS NOTÍCIAS</h2>
+      <h1 class="font-1-l cor-a4">
+        Casal do ano condecorado com medalha por melhor aplicativo mobile
+      </h1>
+
+      <p class="font-3-small cinza">
+        Casal de psicólogos já revolucionou o mercado de tratamentos favoráveis
+        ao autismo e agora recebe prêmio internacional pelo desenvolvimento do
+        elencado ”melhor aplicativo de contação de histórias para crianças” de
+        acordo com Bill Gates.
+      </p>
+      <div>
+        <h3 class="font-3-small cor-a4">
+          <strong>Por:</strong> Luís Felipe Mattos da Silva <br />20 de ago de
+          2023 | Itajaí - SC
+        </h3>
+        <ul class="redes-noticia">
+          <li><a href=""><img src="/imgs/icones/instagram.svg" alt=""></a></li>
+          <li><a href=""><img src="/imgs/icones/whatsapp.svg" alt=""></a></li>
+          <li><a href=""><img src="/imgs/icones/youtube.svg" alt=""></a></li>
+          <li><a href=""><img src="/imgs/icones/facebook.svg" alt=""></a></li>
+        </ul>
       </div>
-      <a class="main-txt" href="/noticias/ultima-noticia.html">
-        <h2 class="font-2-m cor-a2">ÚLTIMAS NOTÍCIAS</h2>
-        <h1 class="font-1-l cor-a4">
-          Casal do ano condecorado com medalha por melhor aplicativo mobile
-        </h1>
-        <h3 class="font-3-small cor-a4">20 de ago de 2023</h3>
-        <p class="font-3-small cinza">
-          Casal de psicólogos já revolucionou o mercado de tratamentos
-          favoráveis ao autismo e agora recebe prêmio internacional pelo
-          desenvolvimento do elencado ”melhor aplicativo de contação de
-          histórias para crianças” de acordo com Bill Gates.
-        </p>
-      </a>
-      <img src="/imgs/blog/wave-main.svg" alt="" class="main-wave" />
     </main>
 
-    <section class="veja-tbm">
-      <h2 class="font-2-m cor-a2">VEJA TAMBÉM:</h2>
-      <nav>
-        <ul>
-          <li class="noticia-caixa">
-            <a href="">
-              <img src="/imgs/blog/noticia-caixa-1.png" alt="" />
-              <h2 class="font-2-m cor-a4">
-                PROGRAMADOR GANHA NACIONAL DE CS E É CHAMADO PARA O TIME DE
-                DESENVOLVIMENTO
-              </h2>
-              <h3 class="font-3-small cinza" style="text-transform: lowercase">
-                20 de ago de 2023
-              </h3>
-            </a>
-          </li>
-          <li class="noticia-caixa">
-            <a href="">
-              <img src="/imgs/blog/noticia-caixa-1.png" alt="" />
-              <h2 class="font-2-m cor-a4">
-                ALUNO COLAPSA COM FACULDADE E SE MUDA PARA ILHA DESERTA VIVENDO
-                A BASE DE FRUTINHAS
-              </h2>
-              <h3 class="font-3-small cinza" style="text-transform: lowercase">
-                20 de ago de 2023
-              </h3>
-            </a>
-          </li>
-          <li class="noticia-caixa">
-            <a href="">
-              <img src="/imgs/blog/noticia-caixa-1.png" alt="" />
-              <h2 class="font-2-m cor-a4">
-                AI E HUMANOS: PALESTRA FALA SOBRE CONVÍVIO PACÍFICO E FUTURO DO
-                PLANETA
-              </h2>
-              <h3 class="font-3-small cinza" style="text-transform: lowercase">
-                20 de ago de 2023
-              </h3>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-
-    <section class="dados-revelam-bg">
-      <div class="dados-revelam container">
-        <div style="display: grid; gap: 20px">
-          <h2 class="font-2-m cor-a2">DADOS REVELAM</h2>
-          <a href="">
-            <h1 class="font-1-m cor-a4" style="margin-bottom: 20px">
-              <span style="color: #ff6961">GUMPee</span> se torna a favorita
-              entre os pais e crianças com autismo!
-            </h1>
-            <h3 class="font-3-small cinza" style="text-transform: lowercase">
-              20 de ago de 2023
-            </h3>
-          </a>
-        </div>
-        <div><img src="/imgs/blog/dados-revelam.jpg" alt="" /></div>
+    <section class="noticia-txt">
+      <img src="/imgs/blog/main.png" alt="">
+      <div>
+        
       </div>
     </section>
-
-    <article class="videos-publicados" style="background: var(--cor-a-3)">
-      <div class="container">
-        <h1 class="font-1-l cor-a4 col-2" style="margin-bottom: 60px">
-          Últimos <span>vídeos</span><br />
-          publicados
-        </h1>
-      </div>
-
-      <div class="videos-bg">
-        <div class="videos">
-          <div>
-            <video src="/imgs/blog/video-1.mov" controls loop></video>
-            <p class="font-3-small cinza">Trolagem com o pai</p>
-          </div>
-          <div>
-            <video src="/imgs/blog/video-1.mov" controls loop></video>
-            <p class="font-3-small cinza">Trolagem com o pai</p>
-          </div>
-        </div>
-        <img src="/imgs/blog/decorador-cobra.png" alt="" />
-        <a target="_blank" href="http://www.instagram.com/gumpee.oficial"></a>
-      </div>
-    </article>
 
     <article
       aria-label="Redes sociais da GUMPee"
@@ -210,15 +134,6 @@
     </button>
 
     <footer class="footer-bg">
-      <div class="footer-txt">
-        <h1 class="font-1-m">
-          Ficou com dúvidas?<br /><span>Contate-nos</span>
-        </h1>
-        <div class="footer-btn font-2-m">
-          <a href="/contato.html" class="btn1">Entre em contato</a>
-          <a href="/contato.html#faq" class="btn2">Perguntas frequentes FAQ</a>
-        </div>
-      </div>
       <div class="footer">
         <nav>
           <div class="footer-coluna">

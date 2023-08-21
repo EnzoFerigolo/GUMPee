@@ -44,3 +44,7 @@
 @import "/estilos/paginas/blog/veja-tambem.css";
 @import "/estilos/paginas/blog/dados-revelam.css";
 @import "/estilos/paginas/blog/videos-publicados.css";
+
+/* Notícia */
+
+@import "/estilos/paginas/blog/noticia.css";
