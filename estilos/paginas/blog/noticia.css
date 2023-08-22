@@ -6,8 +6,7 @@
 }
 
 #noticia main div::after {
-  margin-top: 20px;
-  margin-bottom: 64px;
+  margin: 24px 0;
   content: "";
   width: 100%;
   background: #bababa;
@@ -21,9 +20,30 @@
   gap: 12px;
 }
 
+.noticia-txt .container {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.noticia-txt {
+  text-wrap: balance;
+}
+
+.noticia-txt h3 {
+  margin-top: 20px;
+}
+
 .noticia-txt img {
   width: 100%;
-  max-height: 400px;
+  max-height: 520px;
   object-fit: cover;
   object-position: 0 -250px;
+  margin: 40px 0;
+}
+
+@media (max-width: 650px) {
+  .noticia-txt img {
+    object-position: center;
+    margin: 0;
+  }
 }
