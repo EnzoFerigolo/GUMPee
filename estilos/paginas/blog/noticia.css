@@ -17,7 +17,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  place-items: center;
   gap: 12px;
+}
+
+.redes-noticia img {
+  display: flex;
+  flex-wrap: wrap;
+  height: 24px;
+  margin: auto 0;
 }
 
 .noticia-txt .container {

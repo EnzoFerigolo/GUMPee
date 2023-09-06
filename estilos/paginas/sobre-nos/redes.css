@@ -34,6 +34,7 @@
   place-self: center;
   z-index: 2;
   margin: 80px 0;
+  word-break: break-all;
 }
 
 .redes-texto h1 {

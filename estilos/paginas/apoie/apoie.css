@@ -9,6 +9,7 @@
 
 .apoie {
   padding-top: 80px;
+  overflow: hidden;
 }
 
 .apoie-img {
@@ -69,11 +70,15 @@
 }
 
 @media (max-width: 800px) {
+  .apoie.container {
+    padding: 20px;
+    gap: 0;
+  }
   .apoie-bg {
     background: url("/imgs/fundos/apoie-fundo.png") top left no-repeat,
       var(--cor-a-3);
   }
-  .apoie-img img  {
+  .apoie-img img {
     height: auto;
   }
   .apoie-txt {

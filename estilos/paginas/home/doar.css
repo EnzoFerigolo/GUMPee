@@ -19,6 +19,7 @@
 
 .doar .container {
   position: relative;
+  padding: 28px;
 }
 
 .doar .container::before {

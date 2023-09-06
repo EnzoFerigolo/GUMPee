@@ -6,6 +6,7 @@
 .dados-revelam {
   align-items: center;
   gap: 24px;
+  padding: 32px;
 }
 
 .dados-revelam img {
@@ -26,9 +27,13 @@
 }
 
 @media (max-width: 800px) {
+  .dados-revelam {
+    padding: 16px;
+  }
   .dados-revelam-bg {
     box-shadow: none;
-    padding: 40px;
+    padding: 20px;
+    margin: 0;
   }
   .dados-revelam img {
     aspect-ratio: initial;
