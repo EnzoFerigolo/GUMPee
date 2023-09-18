@@ -7,13 +7,14 @@
 
 .videos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   align-items: start;
   margin: 0 auto;
   max-width: 1000px;
 }
 
-.videos video {
+.videos video,
+.videos iframe {
   aspect-ratio: 9/16;
   display: grid;
   place-self: center;
@@ -25,6 +26,7 @@
 
 .videos p {
   text-align: center;
+  margin-bottom: 28px;
 }
 
 .videos-bg img:first-of-type {

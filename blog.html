@@ -122,7 +122,11 @@
             </h3>
           </a>
         </div>
-        <div><img src="/imgs/blog/dados-revelam.jpg" alt="Pessoa mexendo no celular" /></div>
+        <div>
+          <img
+            src="/imgs/blog/dados-revelam.jpg"
+            alt="Pessoa mexendo no celular" />
+        </div>
       </div>
     </section>
 
@@ -137,11 +141,19 @@
       <div class="videos-bg">
         <div class="videos">
           <div>
-            <video src="/imgs/blog/video-1.mov" controls loop></video>
+            <video controls loop></video>
             <p class="font-3-small cinza">Trolagem com o pai</p>
           </div>
           <div>
-            <video src="/imgs/blog/video-1.mov" controls loop></video>
+            <video controls loop></video>
+            <p class="font-3-small cinza">Trolagem com o pai</p>
+          </div>
+          <div>
+            <video controls loop></video>
+            <p class="font-3-small cinza">Trolagem com o pai</p>
+          </div>
+          <div>
+            <video controls loop></video>
             <p class="font-3-small cinza">Trolagem com o pai</p>
           </div>
         </div>
@@ -210,7 +222,7 @@
     </button>
 
     <footer class="footer-bg">
-      <div class="footer-txt" style="padding-top: 40px;">
+      <div class="footer-txt" style="padding-top: 40px">
         <h1 class="font-1-m">
           Ficou com dúvidas?<br /><span>Contate-nos</span>
         </h1>
@@ -273,8 +285,9 @@
                   /></a>
                 </li>
                 <li>
-                  <a target="_blank"
-                  href="http://wa.me//554735131654?text=Quero conhecer mais sobre a GUMPee!"
+                  <a
+                    target="_blank"
+                    href="http://wa.me//554735131654?text=Quero conhecer mais sobre a GUMPee!"
                     ><img src="/imgs/icones/whatsapp.svg" alt=""
                   /></a>
                 </li>
@@ -298,7 +311,16 @@
         </div>
       </div>
     </footer>
-    <script src="/script.js"></script>
-    <script src="/formulario.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+    <script src="/scripts/baixaVideo.js"></script>
+    <script>
+      (async () => {
+        const data = await (await fetch("instagram.json")).json();
+        const videos = document.querySelectorAll("video");
+        videos.forEach((video, index) => {
+          video.src = data[index];
+        });
+      })();
+    </script>
   </body>
 </html>

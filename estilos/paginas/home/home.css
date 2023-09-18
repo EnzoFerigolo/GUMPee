@@ -262,6 +262,48 @@ section h1 {
   background-color: #e3e3e3;
 }
 
+dialog {
+  position: fixed;
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+  height: fit-content;
+  max-height: 90vh;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  border-radius: 8px;
+}
+
+dialog iframe {
+  margin: 20px auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: solid 6px #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  box-sizing: content-box;
+  aspect-ratio: 16/9;
+}
+
+.btn-fechar {
+  padding: 8px 12px;
+  background-color: #c3c3c3;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid #fff;
+  transition: 0.2s;
+}
+
+.btn-fechar:hover {
+  background-color: #d2d2d2;
+}
+
 @media (max-width: 800px) {
   #home .intro-bg::after {
     top: -65%;
