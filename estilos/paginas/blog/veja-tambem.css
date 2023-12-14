@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   gap: 32px;
   place-content: center;
+  margin: 0 auto;
 }
 
 .noticia-caixa {
